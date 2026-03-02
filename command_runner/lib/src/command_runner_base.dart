@@ -92,7 +92,6 @@ ArgResults parse(List<String> input) {
             }
 
             if (option.type == OptionType.option) {
-            // Throw an exception if an option requires an argument but none is given.
                 if (i + 1 >= input.length) {
                     throw ArgumentException(
                         'Option ${option.name} requires an argument',
